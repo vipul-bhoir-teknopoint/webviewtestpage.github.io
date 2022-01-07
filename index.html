@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webview test page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main-form-holder">
+            <div class="form-heading">
+                <h4>WebView POC Form</h4>
+            </div>
+            <div class="form-data">
+                <form autocomplete="off">
+                <div class="row">
+                    <div class="col1">
+                        <div class="form-element">
+                            <label for="pocFirstName">Enter First Name:</label><br>
+                            <input value="Vipul" type="text" class="text-label-input-field input-field" placeholder="First Name" id="pocFirstName" name="pocFirstName">
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="form-element">
+                            <label for="pocLastName">Enter Last Name:</label><br>
+                            <input value="Bhoir" type="text" class="text-label-input-field input-field" placeholder="Last Name" id="pocLastName" name="pocLastName">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <div class="form-element">
+                            <label>Select Your Gender:</label><br>
+                            <div class=" radio-input gender-input-container">
+                            <input type="radio" id="pocMale" name="pocgender" value="GEN_M" checked="">
+                            <label for="pocMale" class="radiolabel">
+                                <span class="male-span common-span"></span>
+                                <span>Male</span>
+                            </label>
+                            <input type="radio" id="pocFemale" value="GEN_F" name="pocgender">
+                            <label for="pocFemale" class="radiolabel">
+                                <span class="female-span common-span"></span>
+                                <span>Female</span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="form-element">
+                            <label>Are You an NRI?</label><br>
+                            <div class="radio-input isnri-input-container">
+                            <input type="radio" id="pocnriyes" value="Y" name="pocnri">
+                            <label for="pocnriyes" class="radiolabel">
+                                <span class="nriyesspan common-span"></span>
+                                <span class="mob-off">Yes</span>
+                            </label>
+                            <input type="radio" id="pocnrino" value="N" name="pocnri" checked="">
+                            <label for="pocnrino" class="radiolabel">
+                                <span class="nrinospan common-span"></span>
+                                <span class="mob-off">No</span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <div class="form-element">
+                            <label>Do You Smoke?</label><br>
+                            <div class="radio-input issmoker-input-container">
+                            <input type="radio" id="smokeryes" name="tobacco" value="Y">
+                            <label for="smokeryes" class="radiolabel">
+                                <span class="smokeryesspan common-span"></span>
+                                <span class="mob-off">Yes</span>
+                            </label>
+                            <input type="radio" id="smokerno" name="tobacco" value="N" checked="">
+                            <label for="smokerno" class="radiolabel">
+                                <span class="smokernospan common-span"></span>
+                                <span class="mob-off">No</span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="form-element">
+                            <label for="pocDob">Enter Your Date of Birth:</label><br>
+                            <div class="date-picker">
+                            <input value="12-jun-1999" type="text" class="poc-date-of-birth input-field" name="pocDateOfBirth" placeholder="dd-mmm-yyyy" id="pocDob" maxlength="11">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <div class="form-element">
+                            <label for="pocEmail">Enter Your Email:</label><br>
+                            <input value="vipulbhoir9999@gmail.com" type="email" class="input-field" placeholder="Enter Your Email:" id="pocEmail" name="pocEmailAddress">
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="form-element">
+                            <label for="pocNumber">Enter Your Mobile Number:</label><br>
+                            <div class="country-code">
+                            <input value="9876543212" type="text" class="input-field" id="pocNumber" placeholder="Enter mobile number" name="pocMobileNumber"
+                            maxlength="10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row dropdown-occ">
+                    <div class="col1">
+                        <div class="form-element">
+                            <label for="pococc">Select Your Occupation:</label>
+                            <select name="pococc" id="pococc" class="pococcselect">
+                            <option value="OCCT_STUD">Student</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="form-element">
+                            <div class="submit-button">               
+                            <button type="button" id="pocsubmitbutton" class="poc-submit-button">Submit</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
